@@ -31,6 +31,8 @@ export default function NFTBox({ price, nftAddress, tokenId, marketplaceAddress,
     const hideModal = () => setShowModal(false)
     const dispatch = useNotification()
 
+    console.log(imageURI)
+
     const { runContractFunction: getTokenURI } = useWeb3Contract({
         abi: nftAbi,
         contractAddress: nftAddress,
